@@ -1,0 +1,56 @@
+cases
+
+1. add
+- parse add
+
+2. drop
+- parse drop
+
+3. add/drop
+- split into 2, then parse as add and drop
+
+4. add by lm
+- make sure it doesn't change things then ignore the LM, parse as add
+
+5. Drop by lm
+- make sure it doesn't change things then ignore the LM, parse as drop
+
+6. Add/Drop (By LM)
+- make sure it doesn't change things then ignore the LM, split and parse
+
+7. Add (Waivers)
+- make sure it doesn't change things then ignore the waivers, parse as add
+
+8. Trade Processed
+
+9. Trade Upheld (by LM)
+
+10. Trade (Vetoed) (By LM)
+
+11. <franchise> Accepted Trade
+
+12. Draft
+
+Others:
+LM Changed League Settings  League schedule updated
+
+
+
+
+
+
+
+Turn everything into adds and drops
+function to add
+function to drop
+function to parse out add/drop indications from everything else
+
+layers:
+1. parse
+2. send to add OR send to drop
+3. next
+
+
+
+
+trade layer: don't do any action until it's upheld. does upheld contain all information?
